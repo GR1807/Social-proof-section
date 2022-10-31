@@ -19,18 +19,83 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-.header h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 0 7rem;
-  margin-top: 4rem;
+.header-bg {
+  position: absolute;
+  background-image: url("/img/bg-pattern-top-mobile.svg");
+  background-position: center;
+  background-size: contain;
+  width: 375px;
+  height: 232px;
+  top: -8px;
+}
+
+.header-content {
   text-align: center;
-  line-height: 2.2rem;
+  padding: 0 4rem;
+  margin-top: 8rem;
+}
+
+.header-content h3 {
+  color: var(--primary);
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 0 4rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.2rem;
+}
+
+.header-content p {
+  color: var(--first-neutral-color);
+}
+
+.mark-section {
+  padding: 0 4rem;
+}
+
+.mark-section .mark-box {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--second-neutral-color);
+}
+
+.mark-section P {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
   color: var(--primary);
 }
 
-.header p {
+.comments {
   padding: 0 4rem;
-  text-align: center;
+}
+
+.comments p {
+  margin: 0;
+  padding: 0;
+  color: var(--second-neutral-color);
+}
+
+.comments .comment-box {
+  padding: 3.5rem 2.4rem;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.comments img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+}
+
+.comments .name {
+  font-weight: bold;
+}
+
+.comments .status {
+  color: var(--secondary);
+}
+
+.comments .comment-text {
+  padding-top: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
