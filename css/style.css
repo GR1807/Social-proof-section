@@ -23,11 +23,10 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-.header-bg {
+.header-bg-mobile {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("./img/bg-pattern-top-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 375px;
@@ -35,16 +34,23 @@ body {
   z-index: -1;
 }
 
-.bg-bottom {
+.header-bg-desktop {
+  display: none;
+}
+
+.bg-bottom-mobile {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url("./img/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1085px;
   height: 673px;
   z-index: -1;
+}
+
+.bg-bottom-desktop {
+  display: none;
 }
 
 .header-content {
@@ -65,6 +71,7 @@ body {
   text-align: center;
   font-weight: 400;
   margin-bottom: 2rem;
+  color: var(--first-neutral-color);
 }
 
 .rank .rank-box {
@@ -115,13 +122,22 @@ body {
   .header {
     margin-top: 10rem;
   }
-  .header-bg {
-    background-image: url("./img/bg-pattern-top-desktop.svg");
-    left: 26rem;
+  .header-bg-mobile {
+    display: none;
   }
-  .bg-bottom {
-    background-image: url("./img/bg-pattern-bottom-desktop.svg");
+  .header-bg-desktop {
+    position: absolute;
+    display: block;
+    margin-left: 6rem;
+  }
+  .bg-bottom-mobile {
+    display: none;
+  }
+  .bg-bottom-desktop {
+    position: absolute;
+    display: block;
     right: 0rem;
+    bottom: 0rem;
   }
   .header-content h3 {
     font-size: 4rem;
