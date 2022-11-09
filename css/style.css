@@ -27,7 +27,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("/img/bg-pattern-top-mobile.svg");
+  background-image: url("./img/bg-pattern-top-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 375px;
@@ -39,7 +39,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url("/img/bg-pattern-bottom-mobile.svg");
+  background-image: url("./img/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1085px;
@@ -116,11 +116,11 @@ body {
     margin-top: 10rem;
   }
   .header-bg {
-    background-image: url("/img/bg-pattern-top-desktop.svg");
+    background-image: url("./img/bg-pattern-top-desktop.svg");
     left: 26rem;
   }
   .bg-bottom {
-    background-image: url("/img/bg-pattern-bottom-desktop.svg");
+    background-image: url("./img/bg-pattern-bottom-desktop.svg");
     right: 0rem;
   }
   .header-content h3 {
